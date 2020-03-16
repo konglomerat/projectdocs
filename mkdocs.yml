@@ -5,6 +5,9 @@ theme:
   name: 'material'
   custom_dir: 'theme'
 
+plugins:
+  - search
+
 markdown_extensions:
   - codehilite:
       linenums: true
