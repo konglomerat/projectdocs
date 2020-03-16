@@ -8,30 +8,6 @@ theme:
 plugins:
   - search
 
-markdown_extensions:
-  - codehilite:
-      linenums: true
-  - pymdownx.betterem:
-      smart_enable: all
-  - pymdownx.caret
-  - pymdownx.critic
-  - pymdownx.details
-  - pymdownx.emoji:
-      emoji_generator: !!python/name:pymdownx.emoji.to_svg
-  - pymdownx.inlinehilite
-  - pymdownx.magiclink
-  - pymdownx.mark
-  - pymdownx.smartsymbols
-  - pymdownx.superfences
-  - pymdownx.progressbar
-  - pymdownx.extra
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.tilde
-  - admonition
-  - footnotes
-  - pymdownx.keys
-  - pymdownx.arithmatex
 
 repo_url: https://github.com/konglomerat/projectdocs
 repo_name: "github:konglomerat/projectdocs"
