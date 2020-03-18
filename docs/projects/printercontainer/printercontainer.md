@@ -33,9 +33,9 @@ In dem CAD - Modell ist zu sehen, dass die Rollen fest, sprich nicht drehbar sin
 
 Der Klappmechnismus wird durch eine Kurvenscheibe realisiert, welche durch Drehung die Platte, auf der die Rollen befestigt sind nach unten drückt. Dabei ist die Konstruktion so ausgelegt, dass die Rollen im ausgeklappten Zustand in einer Ebene sind und der Container somit gerade ist.
 
-![](images/eingeklappt.jpg)
+![](eingeklappt.jpg)
 
-![](images/ausgeklappt.jpg)
+![](ausgeklappt.jpg)
 
 *Vorteile*
 
