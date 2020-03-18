@@ -1,6 +1,6 @@
 # Konglomerat project documentation
 
-Project documentation for some projects of Konglomerat e.V. in Dresden.
+Project documentation for some projects of the Konglomerat e.V. in Dresden.
 
 ---
 

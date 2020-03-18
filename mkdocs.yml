@@ -1,13 +1,25 @@
-site_name: "konglomerat project docs"
+site_name: "Konglomerat project documentation"
 site_url: https://konglomerat.github.io/projectdocs/
 
 theme:
   name: 'material'
 
+nav:
+  - "index.md"
+  - "Rollcontainer":
+    - "projects/printercontainer/printercontainer.md"
+  - "VeloZack":
+    - "projects/velozack/velozack.md"
+  - "DIT Laser":
+    - "projects/DITLaser/ditlaser.md"
+
 plugins:
   - search
 
 markdown_extensions:
+  - markdown_include.include:
+      base_path: docs
+  - attr_list
   - codehilite:
       linenums: true
   - pymdownx.betterem:
