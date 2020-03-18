@@ -1,0 +1,514 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+        <link rel="canonical" href="https://konglomerat.github.io/projectdocs/projects/DITLaser/electronics/">
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1, mkdocs-material-4.6.3">
+    
+    
+      
+        <title>Electronics - Konglomerat project documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.adb8469c.css">
+      
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.86422ebf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://konglomerat.github.io/projectdocs/" title="Konglomerat project documentation" aria-label="Konglomerat project documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Konglomerat project documentation
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Electronics
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/konglomerat/projectdocs/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    gitlab:konglomerat/projectdocs
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://konglomerat.github.io/projectdocs/" title="Konglomerat project documentation" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Konglomerat project documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/konglomerat/projectdocs/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    gitlab:konglomerat/projectdocs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Rollcontainer
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Rollcontainer
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../printercontainer/printercontainer/" title="Projektbeschreibung" class="md-nav__link">
+      Projektbeschreibung
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      VeloZack
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        VeloZack
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../velozack/velozack/" title="Projektbeschreibung" class="md-nav__link">
+      Projektbeschreibung
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      DIT Laser
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        DIT Laser
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ditlaser/" title="Projektübersicht" class="md-nav__link">
+      Projektübersicht
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/konglomerat/projectdocs/edit/master/docs/projects/DITLaser/electronics.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                  <h1>Electronics</h1>
+                
+                <p>h1. Elektronik</p>
+<p>h2. Links</p>
+<ul>
+<li><a href="../safetycircuit/">Sicherheitsschaltung</a></li>
+<li><a href="../powersupply/">Lasernetzteil</a></li>
+</ul>
+<p>h2. aktueller Stand</p>
+<ul>
+<li>Die Elektronik für die [[Sicherheitsschaltung]] aus der Lasersaur Dokumentation wurde als zu kompliziert verworfen. Umgesetzt wird eine Eigenentwicklung. dafür wurden zusätzliche Komponenten gekauft die über die Lasersaur BOM hinausgehen. </li>
+<li>Eigenlösung, abweichend von der Lasersaur-Elektronik wurde am 10.3.2014 zusammen mit Linux CNC getestet, wenn Notaus während der Fahrt gedrückt wird, wird ev. der SM Treiber zerstört</li>
+<li>Eine Schaltung für die Kontrolle der Betriebszustände (Durchfluss Pumpe, Temperatur Kühlwasser/Motoren, Luftdruck, Betriebsspannungen, Rauchmelder, Betriebsstunden usw.) wurde vorerst zurückgestellt, aber spätestens nach dem Abschluss der Inbetriebnahme sollte auch dieser Punkt angegangen werden.</li>
+</ul>
+<p>h1. Realisierung</p>
+<p>h2. Schaltung</p>
+<p>Unten in der Dateiliste befindet sich der elektrische Plan unseres LaserSaurs (Ansprechpartner Olaf Bitter). </p>
+<p>Erstellt habe ich den Plan mit "QElectroTech":<a href="http://qelectrotech.org">http://qelectrotech.org</a>. Das Programm ist noch nicht ganz stabil aber frei und ganz nett zu bedienen.</p>
+<p>Enthalten ist:</p>
+<ul>
+<li>Übersichtsplan</li>
+<li>PC-Schnittstelle (Parallelport mit Flachbandkabel)</li>
+<li>Einspeisung, Last- und Steuerstromkreise</li>
+<li>Sicherheitsschaltung mit NOT-AUS und Deckel-Überwachung (Kategorie 4 - PL e)
+ ** Not-Aus schaltet alles aus, auch das externe Kühlaggregat (24V und 230V)
+ ** Das Gerät muß nach Betätigung des Not-Aus mit einem Taster (-S1) wieder eingeschaltet werden.
+ ** Deckel-Überwachung mit zwei Positionsschalter, da der Deckel sich an einer Seite öffen kann, wenn die Mitte noch zu ist.
+ ** Ein- / Aus-Schalter per Software mit Signal "Amplifier Enable" wird durch High-Side-Switch (VN750) in -A1 realisiert
+ ** 5V Steuerspannung wird aus der 24V Steuerspannung in -A1 erzeugt und über das Flachbandkabel -W100.26 weitergegeben</li>
+<li>Motorsteuerung und Endlagenschalter
+ ** für die Endlagenschalter habe ich 4-poliges Kabel eingezeichnet, es wird aber 8-poliges Netzwekkabel verwendet.</li>
+<li>Laseransteuerung mit 1 kHz PWM (-A7)
+ ** Glättung erst einmal mit RC-Glied
+ ** 24V Versorgung an -A7 für evt. OPV Glättung vorbereitet</li>
+<li>Klemmenpläne</li>
+<li>Geräteaufbauplan</li>
+</ul>
+<p>h3. TODO</p>
+<ul>
+<li>Bauteile ohne Artikel:
+ ** X104 (Steckverbinder für Kühler-Ventilatoren und Sensor)
+ ** K1 (Zuschalten der Motorbetreibsspannung (+24V_1)
+ ** P1 (Meldeleuchte "Machine an")</li>
+<li></li>
+<li>Black-Boxen -A1, -A6, -A7 mit Leben erfüllen (Schaltungen entwerfen)</li>
+<li>Aufbau für -A1 bis -A7 konstruieren
+ *</li>
+<li>Zusatzschaltungen: Betriebsstundenzähler, Leistungsmesser, u.s.w.</li>
+</ul>
+<p>h3. Changelog</p>
+<p>Ver. 1.2.1.1</p>
+<ul>
+<li>Blattformat A3</li>
+<li>Klemmen korrekt bezeichnet</li>
+<li>Status der Sicherheitsschaltung geht über Signal "Error" zum PC</li>
+<li>Absicherung der 230 V für Kühler mit -F1 (LS C 1 A)</li>
+<li>Absicherung der 24 V für Kühlerlüfter über Netzteil -T1 und zusätzlich mit Schmelzsicherung -F2 (3 A)</li>
+<li>Klemmenpläne erstellt</li>
+<li>Aufbau erstellt</li>
+</ul>
+<p>Ver. 1.1.1.4</p>
+<ul>
+<li>der Plan wird stückweise präziser</li>
+<li>Stecker Klemmen und Kabelbezeichnungen hinzugefügt (noch nicht vollständig)</li>
+</ul>
+<p>Ver. 1.1.1.2</p>
+<ul>
+<li>ext. Kühlaggregat wird nur über NOT-Aus gesteuert. Sicherung zum Schutz des Relaiskontaktes notwendig</li>
+<li>Positionsschalter und Notausschalter müssen natürlich in Reihe geschalten werden</li>
+</ul>
+<p>Ver. 1.1.1.1</p>
+<ul>
+<li>erster Versuch</li>
+</ul>
+<p>h2. Aufbau</p>
+<p>Die Betriebsmittel werden auf drei Tragschienen verteilt. Zusammen mit den Elektronikplatinen wird alles auf eine 500 x 235 mm großen Montageplatte aufgebaut. Die Elektronik kann auf zwei Euro-Platinen (100 x 160 mm) aufgebaut werden. Diese können auf die Montageplatine nebeneinander befestigt werden.</p>
+<p>Und so sieht der Aufbau aus:</p>
+<p><img alt="" src="../images/2015-07-15_21.46.45-web.jpg" /> Erste Betriebsmittel auf Hutschiene montiert</p>
+<p><img alt="" src="../images/2015-10-07_21.35.43-web.jpg" /> erster Test des Aufbaues</p>
+<p><img alt="" src="../images/2015-11-18_09.50.00-web.jpg" /> Blick auf den fertigen Aufbau</p>
+<p><img alt="" src="../images/2016-03-02_21.08.16-web.jpg" /> Ansicht der Sicherheitsrelais</p>
+<p><img alt="" src="../images/2016-03-02_21.08.29-web.jpg" /> Ansicht der Last-Relais </p>
+<p><img alt="" src="../images/2016-03-02_21.08.29-web.jpg" /> Ansicht der großen Klemmenleiste</p>
+<p><img alt="" src="../images/2016-04-20_20.41.10-web.jpg" /> Eingebaut im LaserSaur</p>
+<p>h2. Aufbau der Uni-Platinen "Interface" und "Steuerung"</p>
+<p><a href="http://h2371910.stratoserver.net/attachments/97/DIT-Laser-2016-08-04.sch.pdf">http://h2371910.stratoserver.net/attachments/97/DIT-Laser-2016-08-04.sch.pdf</a> KiCAD Stromlaufplan der Uni-Platinen "Interface" und "Steuerung"</p>
+<p>h3. Schaltungsbeschreibung</p>
+<p>Die digitalen Eingangssignale an -X56 sind an das SPS-Eingangsverhalten nach EN61131-2 Typ1 angelehnt. Die Sensoren (Endlagenschalter) werden durch eine kurzschlußfeste +24V Spannung versorgt. Eine grüne LED zeigt den Schaltzustand an. Sie leuchtet wenn der Eingang auf High (+24V) steht.</p>
+<p>Die Eingangssignale werden durch den Triggerbaustein 74LS14 zum Parallelport weitergeleitet.</p>
+<p>Zum Einschalten der Maschine wird das Linux-CNC-Signal "Amplifier Enable" verwendet. Am Parallelport kommt das Signal an /SelectIn an.  Dieses Signal wird mit dem externen MaschineEnabled-Signal UND-Verknüpft. Ein HighSide Switch (U6) schaltet die +24V Spannung für die Steuerung der Machine ein.</p>
+<p>Die PWM zur Leistungseinstellung des Lasers wird durch ein einfaches RC-Glied geglättet.</p>
+<p>Um die Motortreiber zu schützen wird bei abfallen der Spannung +24V_Save (NOT-AUS) das Reset-Pin der Motortreiber auf LOW gezogen. Für die Pegelanpassung habe ich einen diskret aufgebauten Schmitt-Trigger aufgebaut.</p>
+<p>h3. TODO</p>
+<ul>
+<li>+24V_Save kommt an Input "Error" (Notaus &rarr; Linux-CNC.ESTOP IN)</li>
+<li>Kurzschlußfeste 24V (Imax= 100mA)  Versorgung an Bedienelektronik (X205)</li>
+<li>PWM-Filter überarbeiten bzw. entfernen</li>
+<li>zusätzliches Enable-Pin damit Laser beim Ein-/Ausschalten nicht kurzeitig an geht</li>
+</ul>
+<p>h3. Bilder</p>
+<p>!P8021414_Interface_LS-web.jpg! Leiterplatte Interface: Leiterseite </p>
+<p>!P8021415_Interface_BS-web.jpg! Leiterplatte Interface: Bestückungsseite </p>
+<p>!P3080936-Steuerung_LS-web.jpg! Leiterplatte Steuerung: Leiterseite </p>
+<p>!P3080935-Steuerung_BS-web.jpg! Leiterplatte Steuerung: Bestückungsseite </p>
+<p>p&gt;. <em>Olaf</em></p>
+<p>h2. Verbaute Motore </p>
+<p><em>Typ:</em> Nanotech ST4118M1206-A
+<em>Kenndaten:</em> 3.7V 1.2A</p>
+<p>!img_20140331_202552.jpg!</p>
+<p><em>Typ:</em> ST5918M3008-B
+<em>Kenndaten:</em> 2.1V 3.0A</p>
+<p>!img_20140331_202633.jpg!</p>
+<p>h2. Ansprechpartner: Robert </p>
+<ul>
+<li>zur Ansteuerung der Schrittmotoren kommen Leiterplatten mit dem IC TA8435H von Toshiba zum Einsatz, dieser ist kompatibel zu Nanotech IC </li>
+<li>gesteuert wird der IC über ein Signal welches die Richtung festlegt und ein Clock Signal 1 Takt=1 Schritt diese Variante der Ansteuerung ist allgemein üblich, so dass die Steuerung auch gegen andere Schrittmotortreiber ohne Änderungen in der Software zu ersetzten ist</li>
+<li>für den großen Nema23 Schrittmotor könnte ein IC die eine Wicklung bestromen und der zweite IC die andere </li>
+<li>
+<p>Spec des TA8435H </p>
+<ul>
+<li>unterstützt bipolare Schrittmotoren mit 1,5A (average) und 2,5A (Peak)</li>
+<li>Bipolar </li>
+<li>micro step</li>
+<li>PWM chopper</li>
+<li>Berechnung Shunt Widerständ für kleinen Motor R=U/I=0,8V/1,2A=0,666Ohm P=U<em>I=0,8V</em>1,2A=0,96W</li>
+<li>Berechnung Shunt Widerstand für großen Motor R=U/I=0,8V/1,5A=0,533 Ohm P=U<em>I=0,8V</em>1,5A= 1,2W</li>
+</ul>
+</li>
+</ul>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org" target="_blank" rel="noopener">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.c33a9706.js"></script>
+      
+      <script>app.initialize({version:"1.1",url:{base:"../../.."}})</script>
+      
+    
+  </body>
+</html>
